@@ -16,10 +16,6 @@ import { IonicLicensesComponent } from './components/ionic-licenses';
     // declare all components that your module uses
     IonicLicensesComponent
   ],
-  entryComponents: [
-    // If not lazy loaded
-    IonicLicensesComponent
-  ],
   exports: [
     // export the component(s) that you want others to be able to use
     IonicLicensesComponent

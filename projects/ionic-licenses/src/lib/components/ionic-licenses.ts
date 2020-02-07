@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
-import { Platform, ModalController, ToastController, AlertController } from '@ionic/angular';
+import { ModalController } from '@ionic/angular';
 import { LicensesService } from '../internal-providers/licenses';
 import { DomSanitizer } from '@angular/platform-browser';
 

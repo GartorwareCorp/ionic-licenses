@@ -1,0 +1,47 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1, 
+  "newProjectRoot": "projects",
+  "projects": {
+    "ionic-licenses": {
+      "projectType": "library",
+      "root": "projects/ionic-licenses",
+      "sourceRoot": "projects/ionic-licenses/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ionic-licenses/tsconfig.lib.json",
+            "project": "projects/ionic-licenses/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ionic-licenses/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ionic-licenses/src/test.ts",
+            "tsConfig": "projects/ionic-licenses/tsconfig.spec.json",
+            "karmaConfig": "projects/ionic-licenses/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ionic-licenses/tsconfig.lib.json",
+              "projects/ionic-licenses/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }},
+  "defaultProject": "ionic-licenses"
+}
