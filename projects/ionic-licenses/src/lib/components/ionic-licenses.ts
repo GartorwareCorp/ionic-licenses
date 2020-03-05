@@ -1,7 +1,6 @@
 import { Component, OnInit, OnDestroy, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { LicensesService } from '../internal-providers/licenses';
-import { DomSanitizer } from '@angular/platform-browser';
 
 
 export interface ShowLicense {
@@ -64,13 +63,10 @@ export class IonicLicensesComponent implements OnInit, OnDestroy {
 
   constructor(private cd: ChangeDetectorRef,
     public licensesService: LicensesService,
-    private modalCtrl: ModalController,
-    private sanitized: DomSanitizer) { }
+    private modalCtrl: ModalController) { }
 
   async ngOnInit() {
     console.log(this.licenses);
-
-
 
     this.cd.markForCheck();
   }

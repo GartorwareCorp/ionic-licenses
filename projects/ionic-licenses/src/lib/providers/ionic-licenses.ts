@@ -36,6 +36,10 @@ export class IonicLicenses {
       keyboardClose: opts.keyboardClose
     });
     licensesModal.present();
+
+    return licensesModal.onWillDismiss().then(res => {
+      return res.data;
+    });
   }
 
 
