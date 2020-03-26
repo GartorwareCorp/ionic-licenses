@@ -4,6 +4,8 @@ import { ShowLicense, IonicLicensesComponent } from '../components/ionic-license
 
 export interface ShowLicenseOptions {
   cssClass?: string,
+  enterAnimation?: any,
+  leaveAnimation?: any,
   backdropDismiss?: boolean,
   keyboardClose?: boolean
 }
@@ -32,6 +34,8 @@ export class IonicLicenses {
         licenses: licenses
       },
       cssClass: opts.cssClass,
+      enterAnimation: opts.enterAnimation,
+      leaveAnimation: opts.leaveAnimation,
       backdropDismiss: opts.backdropDismiss,
       keyboardClose: opts.keyboardClose
     });

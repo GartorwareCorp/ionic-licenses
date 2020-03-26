@@ -18,7 +18,7 @@ const HTML_TEMPLATE = `
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="ion-padding">
+<ion-content>
 
   <ion-card *ngFor="let license of licenses; trackBy: licensesTrackByFn">
     <ion-card-header>
@@ -34,7 +34,7 @@ const HTML_TEMPLATE = `
 
 </ion-content>
 
-<ion-footer class="ion-padding">
+<ion-footer>
   <ion-button fill="clear" color="danger" (click)="dismiss()">
     <ion-label>OK</ion-label>
   </ion-button>
