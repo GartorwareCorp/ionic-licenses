@@ -35,9 +35,11 @@ const HTML_TEMPLATE = `
 </ion-content>
 
 <ion-footer>
-  <ion-button fill="clear" color="danger" (click)="dismiss()">
-    <ion-label>OK</ion-label>
-  </ion-button>
+  <ion-toolbar>
+    <ion-button fill="clear" color="danger" (click)="dismiss()">
+      <ion-label>OK</ion-label>
+    </ion-button>
+  </ion-toolbar>
 </ion-footer>
 `;
 
