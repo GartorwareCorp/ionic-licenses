@@ -14,7 +14,6 @@
     "type": "git",
     "url": "git+https://github.com/GartorwareCorp/ionic-licenses.git"
   },
-  "private": true,
   "bugs": {
     "url": "https://github.com/GartorwareCorp/ionic-licenses/issues"
   },
