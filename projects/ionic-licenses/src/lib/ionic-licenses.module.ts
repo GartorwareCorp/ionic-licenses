@@ -22,7 +22,7 @@ import { IonicLicensesComponent } from './components/ionic-licenses';
   ]
 })
 export class IonicLicensesModule {
-  static forRoot(): ModuleWithProviders {
+  static forRoot(): ModuleWithProviders<IonicLicensesModule> {
     return {
       ngModule: IonicLicensesModule,
       providers: [IonicLicenses, LicensesService]
