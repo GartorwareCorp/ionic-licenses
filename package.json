@@ -1,6 +1,6 @@
 {
   "name": "ionic-licenses",
-  "version": "2.0.0",
+  "version": "3.0.1",
   "description": "Reusable ionic dialog component for listing licenses",
   "scripts": {
     "ng": "ng",
